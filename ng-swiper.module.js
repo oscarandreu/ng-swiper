@@ -1,10 +1,11 @@
-import angular from angular
-import './node_modules/swiper/dist/js/swiper.js'
-import './node_modules/swiper/dist/css/swiper.css'
+require('angular')
+
+import '../swiper/dist/js/swiper.js'
+import '../swiper/dist/css/swiper.css'
 
 const MODULE_NAME = 'ngSwiper'
 
-import ngSwiper from './ng-swiper.directive'
+import ngSwiperDirective from './ng-swiper.directive.js'
 
 angular.module(MODULE_NAME, [])
-angular.module(MODULE_NAME).directive('ngSweaper', ngSwiper)
+angular.module(MODULE_NAME).directive('ngSweaper', ngSwiperDirective)

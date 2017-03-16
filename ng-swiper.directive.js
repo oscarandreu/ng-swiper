@@ -1,6 +1,6 @@
 
-import controller from './ngSwiperController.controller'
-import templateUrl from './ngSwiperController.html'
+import controller from './ng-swiper.controller.js'
+import 'swiper'
 
 function SliderDirective() {
     return{
@@ -20,7 +20,12 @@ function SliderDirective() {
             onSlideChangeStart: '=',
             loop: '@'
         },
-        templateUrl: templateUrl
+        template: 
+        `<div class="swiper-container" id="{{::$id}}_slider">
+			<div class="swiper-wrapper"  id="{{::$id}}_sliderContainer"></div>
+			<div id="{{::$id}}_buttonPrev" class="swiper-button-prev"></div>
+			<div id="{{::$id}}_buttonNext" class="swiper-button-next"></div>   
+		</div>`
     }
 
 }
