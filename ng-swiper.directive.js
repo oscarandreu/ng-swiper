@@ -1,6 +1,5 @@
 
 import controller from './ng-swiper.controller.js'
-import 'swiper'
 
 function SliderDirective() {
     return{
