@@ -8,4 +8,4 @@ const MODULE_NAME = 'ngSwiper'
 import ngSwiperDirective from './ng-swiper.directive.js'
 
 angular.module(MODULE_NAME, [])
-angular.module(MODULE_NAME).directive('ngSweaper', ngSwiperDirective)
+angular.module(MODULE_NAME).directive(MODULE_NAME, ngSwiperDirective)
