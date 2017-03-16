@@ -41,7 +41,8 @@ class ngSwiperController {
                 this.loadSlider()
             }
 
-            this.onSlideChangeStart()                
+            if(this.onSlideChangeStart)
+            	this.onSlideChangeStart()                
         })        
     }
 
