@@ -32,7 +32,6 @@ class ngSwiperController {
         })
         
         this.$timeout( () => {
-            console.log('ng-swiper loaded')
             //DOM has finished rendering
             this.DOMRendered = true
             this.container = document.getElementById(`${this.$id}_sliderContainer`)
@@ -67,7 +66,6 @@ class ngSwiperController {
                 effect: 'fade',
                 onSlideChangeStart: this.onSlideChangeStart
             })
-        console.log(this.swiper)
     }
 
     flush(container){
