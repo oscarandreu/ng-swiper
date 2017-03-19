@@ -1,8 +1,8 @@
 {
   "name": "ng-swiper",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Angular directive for swiper",
-  "main": "src/ng-swiper.module.js",
+  "main": "dist/ng-swiper.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",    
     "build": "webpack --display-modules --progress",
