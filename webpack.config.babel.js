@@ -10,7 +10,6 @@ let vendors = ['swiper', 'angular']
 function getPlugins(env) {
     let plugins = []    
     plugins.push(new webpack.LoaderOptionsPlugin({ debug: true }))
-    // plugins.push(new webpack.optimize.CommonsChunkPlugin({ names: ['vendors'], filename: '[name].bundle.js' }))
     plugins.push(new BabiliPlugin())
     
     return plugins
@@ -22,8 +21,7 @@ export default (env = {}) => {
     return {
         entry: {
             'ng-swiper': './src/ng-swiper.module.js',
-            //vendors: vendors
-            //ignore: ['angular', 'swiper']
+            vendors: vendors
         },
         output: {
             path: path.resolve(__dirname, 'dist'),
