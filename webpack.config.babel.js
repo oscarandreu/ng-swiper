@@ -4,10 +4,15 @@ import BabiliPlugin from 'babili-webpack-plugin'
 
 // Conditionally return a list of plugins to use based on the current environment.
 // Repeat this pattern for any other config key (ie: loaders, etc).
+
+let vendors = ['swiper', 'angular']
+
 function getPlugins(env) {
     let plugins = []    
     plugins.push(new webpack.LoaderOptionsPlugin({ debug: true }))
-
+    // plugins.push(new webpack.optimize.CommonsChunkPlugin({ names: ['vendors'], filename: '[name].bundle.js' }))
+    plugins.push(new BabiliPlugin())
+    
     return plugins
 }
 
@@ -16,12 +21,14 @@ export default (env = {}) => {
 
     return {
         entry: {
-            app: './app.js'
+            'ng-swiper': './src/ng-swiper.module.js',
+            //vendors: vendors
+            //ignore: ['angular', 'swiper']
         },
         output: {
-            path: path.resolve(__dirname, 'build'),
-            filename: '[name].bundle.js',
-            publicPath: '/build/'
+            path: path.resolve(__dirname, 'dist'),
+            filename: '[name].min.js',
+            publicPath: '/dist/'
         },
         module: {
             rules: [

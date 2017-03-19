@@ -3,9 +3,11 @@
   "version": "0.0.1",
   "scripts": {
     "build": "webpack --display-modules --progress",
-    "watch": "webpack --display-modules --progress --watch"
+    "watch": "webpack --display-modules --progress --watch",
+    "web": "webpack-dev-server"
   },
   "dependencies": {
+    "swiper": "^3.4.1",
     "angular": "^1.6.3",
     "angular-route": "^1.6.3"
   },

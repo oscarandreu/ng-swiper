@@ -1,7 +1,7 @@
 require('angular')
 
-import '../swiper/dist/js/swiper.js'
-import '../swiper/dist/css/swiper.css'
+import '../node_modules/swiper/dist/js/swiper.js'
+import '../node_modules/swiper/dist/css/swiper.css'
 
 const MODULE_NAME = 'ngSwiper'
 

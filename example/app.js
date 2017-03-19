@@ -1,6 +1,7 @@
 import 'angular'
 import 'angular-route'
-import 'ng-swiper'
+//import 'swiper'
+import '../dist/ng-swiper.min.js'
 
 import exampleController from './exampleController'
 
