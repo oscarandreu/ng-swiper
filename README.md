@@ -8,6 +8,12 @@ In the package there is a simple example using webpack than can be checked using
 
 This last command will launch the Webpack dev server in http://localhost:8080
 
+##Requirements   
+Angularjs v1.3+
+
+##Installation  
+npm install ng-swiper --save
+
 ## How to use it 
 The directive can be used like this:
 ~~~~
