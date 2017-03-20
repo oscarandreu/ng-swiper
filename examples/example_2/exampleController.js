@@ -2,13 +2,9 @@ class mainController {
     constructor($scope){
 
         $scope.slides = [
-            {
-                image : "/img/slider1.jpg"
-            }
-            ,{
-                image : "/img/slider2.jpg"
-            }
-        ]     
+                {image : "https://raw.githubusercontent.com/oscarandreu/ng-swiper/master/examples/example_2/img/slider1.jpg"},
+                {image : "https://raw.githubusercontent.com/oscarandreu/ng-swiper/master/examples/example_2/img/slider2.jpg"}
+            ]   
 
         $scope.slideChange = (swiper) => {
             let index = swiper ? swiper.realIndex :0

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html ng-app="ngSwiperExample">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>ng-swiper example</title>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <script data-require="angular.js@1.5.x" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.10/angular.min.js" data-semver="1.5.10"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js"></script>
+    <script src="https://rawgit.com/oscarandreu/ng-swiper/master/dist/ng-swiper.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+
+  <body ng-controller="MainCtrl">
+    <ng-swiper 
+      elements="slides"
+      on-slide-change-start ="slideChange"
+      speed: "1000",
+      centeredSlides: "true",
+      autoplay: "5000",
+      autoplayDisableOnInteraction: "true",
+      slidesPerView: "1",
+      paginationClickable: "true",
+      effect: "fade",
+      loop: 'true'
+    >      
+    </ng-swiper>
+
+  </body>
+
+</html>
