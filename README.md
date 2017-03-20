@@ -42,10 +42,10 @@ And use the directive in your view:
 </ng-swiper>
 ~~~~
 
-## Use examples  
+## Use examples
 In the examples folder you can find several examples  
 ### example_1:  
-Ready to go simple use example.  
+Ready to go simple use example. 
 ### example_2:  
 Webpack 2 / ES6 example than can be checked using nodejs executing the next commands.
  - npm install  

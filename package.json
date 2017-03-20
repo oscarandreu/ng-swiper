@@ -1,6 +1,6 @@
 {
   "name": "ng-swiper",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "description": "Angular directive for swiper",
   "main": "dist/ng-swiper.min.js",
   "scripts": {
